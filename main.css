@@ -1,0 +1,46 @@
+.menu{
+    display: flex;
+
+}
+
+.menu :hover {
+    background: black;
+    transition: 0.7s;
+}
+
+.menu li{
+    width: 200px;
+    list-style: none;
+    background: blueviolet;
+    position: relative;
+}
+
+
+.menu a {
+    color: #FFFF00;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+
+}
+
+.menu ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    padding: 0;
+}
+
+.menu li:hover > ul {
+    display: block;
+
+}
+
+.menu ul ul {
+    display: none;
+    top: 0;
+    left: 100%;
+}
